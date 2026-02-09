@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mucharief.github.io/crud-app/",
+  "homepage": "https://mucharief.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "copy dist\\index.html dist\\404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
